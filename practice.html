@@ -1,0 +1,268 @@
+<html>
+
+<head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer"
+    />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <style>
+        * {
+            margin: 0;
+        }
+        
+        .header {
+            display: flex;
+            flex-direction: row-reverse;
+            margin: 2vh 2vw;
+            align-items: center;
+        }
+        
+        .header>div {
+            height: 6vh;
+            width: 3vw;
+            border-radius: 5vh;
+            margin-left: 1vw;
+            cursor: pointer;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+        }
+        
+        .header>div:hover {
+            background-color: rgb(228, 222, 222);
+        }
+        
+        .header>div>img {
+            height: 5vh;
+            width: 2.5vw;
+            border-radius: 5vh;
+        }
+        
+        .header>a {
+            color: rgb(43, 41, 41);
+            text-decoration: none;
+            margin-left: 1vw;
+            margin-right: 1vw;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 1vw;
+            cursor: pointer;
+        }
+        
+        .header>a:hover {
+            border-bottom: 1px solid black;
+        }
+        
+        .header>i {
+            width: 2.5vw;
+            height: 5vh;
+            border-radius: 3vh;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            cursor: pointer;
+        }
+        
+        .header>i:hover {
+            background-color: rgb(243, 235, 235);
+        }
+        
+        .body {
+            display: grid;
+            justify-content: center;
+            width: 50vw;
+            height: 50vh;
+            margin: 10vh 20vw;
+        }
+        
+        .body>img {
+            margin-top: 3vh;
+            margin-left: 12vw;
+        }
+        
+        .body>div>input {
+            width: 40vw;
+            height: 6vh;
+            border-radius: 5vh;
+            border: 1px solid rgb(219, 215, 215);
+            outline-style: none;
+            font-size: 1.3vw;
+            padding: 1vh 3vw;
+        }
+        
+        .body>div>input:hover {
+            box-shadow: 1px 1px 5px 1px rgb(197, 190, 190);
+        }
+        
+        .buttons {
+            display: flex;
+            justify-content: space-around;
+            width: 55%;
+            margin-left: 10vw;
+        }
+        
+        .buttons>button {
+            width: 10vw;
+            height: 5vh;
+            border-radius: 4px;
+            border: none;
+            font-size: 1.1vw;
+            background-color: rgb(245, 245, 245);
+            color: rgb(66, 65, 65);
+            cursor: pointer;
+        }
+        
+        .buttons>button:hover {
+            border: 1px solid rgb(202, 198, 198);
+        }
+        
+        .language_select {
+            margin-left: 5vw;
+        }
+        
+        .language_select>a {
+            text-decoration: none;
+            margin-left: 1vw;
+            font-size: 0.8vw;
+        }
+        
+        .language_select>a:hover {
+            border-bottom: 1px solid blue;
+        }
+        
+        #search_icon {
+            position: absolute;
+            color: rgb(163, 160, 160);
+            font-size: 1.2vw;
+            margin-left: 1vw;
+            margin-top: 2vh;
+        }
+        
+        #mic_icon {
+            position: absolute;
+            color: rgb(91, 94, 253);
+            font-size: 1.5vw;
+            margin-top: 1.5vh;
+            margin-left: -2vw;
+            cursor: pointer;
+        }
+        
+        .footer {
+            position: absolute;
+            background-color: rgb(241, 241, 241);
+            display: grid;
+            color: rgb(121, 120, 120);
+            font-size: 0.8vw;
+            font-family: Arial, Helvetica, sans-serif;
+            width: 100vw;
+            margin-top: 10.9vh;
+        }
+        
+        .footer_upper {
+            border-bottom: 1px solid gray;
+            padding: 1.5vh 2vw;
+        }
+        
+        .footer_bottom {
+            display: flex;
+            justify-content: space-between;
+            padding: 1.5vh 2vw;
+        }
+        
+        .footer_bottom_left>h3 {
+            margin-right: 1vw;
+            cursor: pointer;
+        }
+        
+        .footer_bottom_left>h3:hover {
+            border-bottom: 1px solid gray;
+        }
+        
+        .footer_bottom_left {
+            display: flex;
+        }
+        
+        .footer_bottom_right {
+            display: flex;
+        }
+        
+        .footer_bottom_right>h3 {
+            margin-right: 1vw;
+            cursor: pointer;
+        }
+        
+        .footer_bottom_right>h3:hover {
+            border-bottom: 1px solid gray;
+        }
+    </style>
+
+    <script>
+    </script>
+
+</head>
+
+<body>
+    <div class="header">
+
+        <div>
+            <img src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTjt8MO_eKt1zOOl2L1rZks7RQNCoQ629QtcA&usqp=CAU'>
+
+        </div>
+
+        <i class="fas fa-bars"></i>
+        <a href="#">Gmail</a>
+        <a href="#">Images</a>
+
+
+    </div>
+    <div class="body">
+        <img src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png" alt="">
+        <div>
+            <i id='search_icon' class="fas fa-search"></i>
+            <input type='text'>
+            <i id='mic_icon' class="fas fa-microphone"></i>
+
+        </div>
+
+        <div class="buttons">
+            <button>Google Search</button>
+            <button>I'm Feeling Lucky</button>
+
+        </div>
+        <div class="language_select">
+            Google offered in:
+            <a href="#">हिन्दी</a>
+            <a href="#">বাংলা</a>
+            <a href="#">తెలుగు</a>
+            <a href="#">मराठी</a>
+            <a href="#">தமிழ்</a>
+            <a href="#">ગુજરાતી</a>
+        </div>
+
+    </div>
+    <div class="footer">
+
+        <div class="footer_upper">
+            <h3>India</h3>
+        </div>
+        <div class="footer_bottom">
+            <div class="footer_bottom_left">
+                <h3>About</h3>
+                <h3>Advertising</h3>
+                <h3>Business</h3>
+                <h3>How Search Works</h3>
+
+            </div>
+            <div class="footer_bottom_right">
+                <h3>Privacy</h3>
+                <h3>Terms</h3>
+                <h3>Setting</h3>
+            </div>
+
+
+        </div>
+
+    </div>
+
+</body>
+
+
+</html>
